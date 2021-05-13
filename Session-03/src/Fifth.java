@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Fifth {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+//        String s1 = scanner.next();
+//        String s2 = scanner.next();
+//        String s3 = scanner.next();
+//
+//        System.out.println(s1);
+//        System.out.println(s2);
+//        System.out.println(s3);
+
+        String s4 = scanner.nextLine();
+        System.out.println(s4);
+
+    }
+}
