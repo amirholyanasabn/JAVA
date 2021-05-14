@@ -6,8 +6,9 @@ public class SecondExercise {
         System.out.println("Please enter your text : ");
         String text = scanner.nextLine();
         char[] chars = text.toCharArray();
-        for (int i=chars.length;i>=0;i--){
-            System.out.print(chars[i]);
+        int i=chars.length-1;
+        for (int j =i;j>=0;j--){
+            System.out.print(chars[j]);
         }
     }
 }
