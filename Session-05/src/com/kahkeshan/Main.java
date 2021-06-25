@@ -6,6 +6,9 @@ import com.kahkeshan.soccer.Soccer;
 public class Main {
     public static void main(String[] args) {
         Person person = new Person();
+
+        Object obj = new Object();
+
         person.setName("John");
         person.setFamily("Doe");
         person.setAge(30);
