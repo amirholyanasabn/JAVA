@@ -1,0 +1,14 @@
+body{
+    margin-top: 20px;
+}
+.btn-cal{
+    margin-right: 100px;
+}
+#error{
+
+    font-weight: bold;
+
+}
+#div-error{
+    display: none;
+}
