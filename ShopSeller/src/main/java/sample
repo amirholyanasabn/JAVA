@@ -1,0 +1,31 @@
+
+aveInvoice = 0
+sumPriceInvoice = 0
+bestSeller = ""
+shopSumPrice = 0
+while(true) {
+
+    print => how many seller ?
+    sellerCount = input number of seller
+
+    for(0 -> sellerCount.lent ){
+
+        name ? family ? invoiceCount ?
+
+        for(0 -> invoiceCount){
+
+            print - > invoice price ?
+            sumPrice += invoicePrice
+            shopSumPrice += sumPrice
+        }
+        if(sumPrice > bestSellerSumPrice ){
+            ......
+        }
+        avgPrice = sumPrice / invoiceCount
+
+
+    }
+
+
+
+ }
