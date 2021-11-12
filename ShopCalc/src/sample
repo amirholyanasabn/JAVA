@@ -1,0 +1,8 @@
+while(true) :
+    howManySeller = operatorSeller ?
+    for(size of operatorSeller):
+        operatorInformation = ???
+        //name,invoiceCount
+        for(invoiceCount size):
+            invoicePrices
+            

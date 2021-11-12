@@ -1,9 +1,10 @@
 max = > 56 car per day
 ===============================
 menu:
-    1-create factor for exit
+    1-enter car
     2-remain and import and export
     3-detail of car
+    4-exit car
     0-exit
 ==================================
 check LocalDataTime for start repair shop work
@@ -14,7 +15,16 @@ if( localDB < 8 ){
 sout => "Welcome"; // method
 while(true){
     -showMenu()
-    -getMenu()
+    menu=getMenu()
+    switch(menu){
+    case 1 :
+    case 2 :
+    case 3 :
+    case 4 :
+    case 0 :
+        exit()
+
+    }
 
 
 
