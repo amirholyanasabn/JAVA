@@ -1,24 +1,44 @@
 package data;
 
-import controllers.EnrollController;
 import entities.Student;
 
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class StudentDAO {
-    static final String DB_URL ="jdbc:mysql://localhost:3306/amir/student";
-    static final String USER = "amir";
-    static final String PASS = "1124";
-
-    public static void save(Student student) throws SQLException {
-
-        Connection connection = DriverManager.getConnection(DB_URL,USER,PASS);
-        PreparedStatement preparedStatement = connection.prepareStatement("insert inout student (name,family,major) values (?,?,?)");
-        preparedStatement.setString(1,student.getName());
-        preparedStatement.setString(2, student.getFamily());
-        preparedStatement.setString(3,student.getMajor());
-
-        preparedStatement.executeUpdate();
-        connection.close();
+    private static Connection connection;
+    static {
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/amir","root","1124");
+        } catch (SQLException e) {
+            System.err.println("Not connection");
+        }catch (ClassNotFoundException e){
+            e.printStackTrace();
+        }
+    }
+    public int save(Student student) throws SQLException {
+        if (connection != null){
+            PreparedStatement ps = connection.prepareStatement("insert into student (name ,family,major) values (?,?,?)");
+            ps.setString(1,student.getName());
+            ps.setString(2,student.getFamily());
+            ps.setString(3,student.getMajor());
+            int res = ps.executeUpdate();
+            return res;
+        }
+        return -1;
+    }
+    public List<Student> getAll() throws SQLException {
+        List<Student> students = new ArrayList<>();
+        if (connection !=  null) {
+            Statement statement = connection.createStatement();
+            ResultSet rs = statement.executeQuery("SELECT * from student");
+            while (rs.next()){
+                Student student = new Student(rs.getInt(1),rs.getString(2),rs.getString(3),rs.getString(4));
+                students.add(student);
+            }
+        }
+        return students;
     }
 }
