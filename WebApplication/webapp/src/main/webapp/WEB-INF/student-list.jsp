@@ -50,8 +50,8 @@
         <td>${st.family}</td>
         <td>${st.major}</td>
         <td>
-            <a href="#" class="btn btn-sm btn-danger">Delete</a>
-            <a href="#" class="btn btn-sm btn-success">Edit</a>
+            <a href="/student-delete.do?id=${st.id}" class="btn btn-sm btn-danger">Delete</a>
+            <a href="/student-edit.do?id=${st.id}" class="btn btn-sm btn-success">Edit</a>
         </td>
     </tr>
 

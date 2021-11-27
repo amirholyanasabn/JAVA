@@ -8,14 +8,12 @@ import java.util.List;
 
 public class StudentDAO {
     private static Connection connection;
-    static {
+    public StudentDAO() throws SQLException{
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/amir","root","1124");
-        } catch (SQLException e) {
-            System.err.println("Not connection");
-        }catch (ClassNotFoundException e){
-            e.printStackTrace();
+        } catch (Exception e) {
+            throw new SQLException("Database is not available.");
         }
     }
     public int save(Student student) throws SQLException {
@@ -40,5 +38,42 @@ public class StudentDAO {
             }
         }
         return students;
+    }
+    public void delete(int id) throws SQLException {
+        if (connection != null){
+            PreparedStatement ps = connection.prepareStatement("delete from student where id=?");
+            ps.setInt(1,id);
+            int res = ps.executeUpdate();
+        }else
+            throw new SQLException("Connection is null.");
+    }
+    public Student findById(int id) throws SQLException {
+        Student student = new Student();
+        if (connection != null) {
+            PreparedStatement ps = connection.prepareStatement("select * from student where id = ?");
+            ps.setInt(1, id);
+            ResultSet rs = ps.executeQuery();
+            if (rs.next()) {
+                student.setId(rs.getInt(1));
+                student.setName(rs.getString(2));
+                student.setFamily((rs.getString(3)));
+                student.setMajor((rs.getString(4)));
+            }
+        } else
+            throw new SQLException("Connection is null");
+        return student;
+    }
+
+    public int edit(Student student) throws SQLException {
+        if (connection != null){
+            PreparedStatement ps = connection.prepareStatement("update student set name = ? ,family = ?,major = ? where id = ?");
+            ps.setString(1,student.getName());
+            ps.setString(2,student.getFamily());
+            ps.setString(3,student.getMajor());
+            ps.setInt(4,student.getId());
+            int rs = ps.executeUpdate();
+            return rs;
+        }else
+            throw new SQLException("Connection in null.");
     }
 }

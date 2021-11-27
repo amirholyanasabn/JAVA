@@ -10,20 +10,21 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.SQLException;
-import java.util.List;
 
-@WebServlet("/student-list.do")
-public class StudentListController extends HttpServlet {
+@WebServlet("/student-edit.do")
+public class StudentFetchToEditController extends HttpServlet {
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
+        String sid = req.getParameter("id");
+        int id = Integer.parseInt(sid);
         try {
-            StudentService studentService = new StudentService();
-            List<Student> students = studentService.getAll();
-            req.setAttribute("list",students);
-            req.getRequestDispatcher("/WEB-INF/student-list.jsp").forward(req,resp);
-        } catch (SQLException e) {
-            resp.sendRedirect("/WEB_-INF/error.jsp");
+            StudentService service = new StudentService();
+            Student student = service.findById(id);
+            req.setAttribute("student",student);
+            req.getRequestDispatcher("/WEB-INF/edit-student.jsp").forward(req,resp);
+        }catch (SQLException e){
+            resp.sendRedirect("/error.do");
         }
+
     }
 }

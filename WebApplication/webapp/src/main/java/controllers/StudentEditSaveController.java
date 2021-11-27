@@ -11,31 +11,21 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.SQLException;
 
-@WebServlet("/register-student.do")
-public class RegisterStudentController extends HttpServlet {
-    StudentService studentService;
-    public RegisterStudentController(){
-
-    }
+@WebServlet("/student-edit-save.do")
+public class StudentEditSaveController extends HttpServlet {
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        try {
-            studentService = new StudentService();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+        String id = req.getParameter("id");
         String name = req.getParameter("name");
         String family = req.getParameter("family");
         String major = req.getParameter("major");
-
-        Student student = new Student(name,family,major);
-
+        Student student = new Student(Integer.parseInt(id),name,family,major);
         try {
-            studentService.save(student);
-        } catch (SQLException e) {
+            StudentService service = new StudentService();
+            service.edit(student);
+            resp.sendRedirect("/student-list.do");
+        }catch (SQLException e){
             resp.sendRedirect("/error.do");
         }
-
-        req.getRequestDispatcher("/WEB-INF/register-student.jsp").forward(req,resp);
     }
 }
