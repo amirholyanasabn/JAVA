@@ -9,109 +9,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1055db7-bfa8-421e-9c05-f1dab0d1096b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/ErrorController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/RegisterController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/RegisterStudentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/StudentListController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/servieces/StudentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/error.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/taglibs-standard-jstlel-1.2.5.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/register.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/student-list.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/bootstrap-3.3.7-dist/css/bootstrap-theme.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/bootstrap-3.3.7-dist/css/bootstrap-theme.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/bootstrap-3.3.7-dist/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/bootstrap-3.3.7-dist/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/bootstrap-3.3.7-dist/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/bootstrap-3.3.7-dist/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/bootstrap-3.3.7-dist/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/bootstrap-3.3.7-dist/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/bootstrap-3.3.7-dist/js/npm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/EnrollController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/RegistrationController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/data/StudentDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/StudentDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/StudentService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/enroll.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/home.jsp" beforeDir="false" />
+    <list default="true" id="e1055db7-bfa8-421e-9c05-f1dab0d1096b" name="Changes" comment="crud">
+      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/StudentFindController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/student-find.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/modal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/56d65bf9-061a-4696-8c56-a865a0924e4c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/56d65bf9-061a-4696-8c56-a865a0924e4c.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/edit-student.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/edit-student.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/register-student.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/register-student.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/bootstrap-4.6.1-dist/css/bootstrap-grid.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/bootstrap-4.6.1-dist/css/bootstrap-grid.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/bootstrap-4.6.1-dist/css/bootstrap-grid.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/bootstrap-4.6.1-dist/css/bootstrap-grid.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/bootstrap-4.6.1-dist/css/bootstrap-reboot.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/bootstrap-4.6.1-dist/css/bootstrap-reboot.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/bootstrap-4.6.1-dist/css/bootstrap-reboot.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/bootstrap-4.6.1-dist/css/bootstrap-reboot.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/bootstrap-4.6.1-dist/css/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/bootstrap-4.6.1-dist/css/bootstrap.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/bootstrap-4.6.1-dist/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/bootstrap-4.6.1-dist/css/bootstrap.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/bootstrap-4.6.1-dist/js/bootstrap.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/bootstrap-4.6.1-dist/js/bootstrap.bundle.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/bootstrap-4.6.1-dist/js/bootstrap.bundle.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/bootstrap-4.6.1-dist/js/bootstrap.bundle.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/bootstrap-4.6.1-dist/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/bootstrap-4.6.1-dist/js/bootstrap.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/bootstrap-4.6.1-dist/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/bootstrap-4.6.1-dist/js/bootstrap.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/style/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controllers/EnrollController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controllers/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controllers/HomeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controllers/RegistrationController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/data/StudentDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/data/StudentDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entities/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entities/Student.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/services/StudentService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/student-list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/student-list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/webapp.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/webapp.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp/WEB-INF/classes/controllers/EnrollController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp/WEB-INF/classes/controllers/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/webapp/WEB-INF/classes/controllers/HomeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp/WEB-INF/classes/controllers/RegistrationController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp/WEB-INF/classes/data/StudentDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/webapp/WEB-INF/classes/data/StudentDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp/WEB-INF/classes/entities/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/webapp/WEB-INF/classes/entities/Student.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp/WEB-INF/classes/services/StudentService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp/WEB-INF/enroll.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp/WEB-INF/home.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/webapp/WEB-INF/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/webapp/WEB-INF/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp/WEB-INF/lib/mysql-connector-java-8.0.26.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp/WEB-INF/lib/tomcat-jdbc-10.1.0-M6.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp/WEB-INF/lib/tomcat-juli-10.1.0-M6.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/webapp/WEB-INF/register-student.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/webapp/WEB-INF/register-student.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp/bootstrap-4.6.1-dist/css/bootstrap-grid.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp/bootstrap-4.6.1-dist/css/bootstrap-grid.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp/bootstrap-4.6.1-dist/css/bootstrap-grid.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp/bootstrap-4.6.1-dist/css/bootstrap-grid.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp/bootstrap-4.6.1-dist/css/bootstrap-reboot.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp/bootstrap-4.6.1-dist/css/bootstrap-reboot.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp/bootstrap-4.6.1-dist/css/bootstrap-reboot.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp/bootstrap-4.6.1-dist/css/bootstrap-reboot.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp/bootstrap-4.6.1-dist/css/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp/bootstrap-4.6.1-dist/css/bootstrap.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp/bootstrap-4.6.1-dist/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp/bootstrap-4.6.1-dist/css/bootstrap.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp/bootstrap-4.6.1-dist/js/bootstrap.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp/bootstrap-4.6.1-dist/js/bootstrap.bundle.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp/bootstrap-4.6.1-dist/js/bootstrap.bundle.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp/bootstrap-4.6.1-dist/js/bootstrap.bundle.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp/bootstrap-4.6.1-dist/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp/bootstrap-4.6.1-dist/js/bootstrap.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp/bootstrap-4.6.1-dist/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp/bootstrap-4.6.1-dist/js/bootstrap.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp/style/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp/WEB-INF/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/webapp/WEB-INF/register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp/WEB-INF/student-list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/webapp/WEB-INF/student-list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp/assets/main.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,13 +38,22 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="JavaScript File" />
         <option value="Class" />
         <option value="Jsp File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/../.." value="phase-1" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/student-list.jsp" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -155,6 +80,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\JAVA\WebApplication\webapp\src\main\webapp\assets\css" />
       <recent name="F:\JAVA\WebApplication\webapp\src\main\webapp\WEB-INF\lib" />
       <recent name="F:\JAVA\WebApplication\webapp\src\main\webapp\WEB-INF" />
     </key>
@@ -262,7 +188,19 @@
       <workItem from="1637645587254" duration="2691000" />
       <workItem from="1637648481030" duration="389000" />
       <workItem from="1637821658544" duration="8441000" />
+      <workItem from="1637839544983" duration="2015000" />
+      <workItem from="1637906914295" duration="6886000" />
+      <workItem from="1637999315421" duration="3444000" />
+      <workItem from="1638092242332" duration="6052000" />
     </task>
+    <task id="LOCAL-00001" summary="crud">
+      <created>1638002375446</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1638002375446</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -282,5 +220,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="crud" />
+    <option name="LAST_COMMIT_MESSAGE" value="crud" />
   </component>
 </project>

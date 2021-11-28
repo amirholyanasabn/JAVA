@@ -9,7 +9,7 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
-    <link href="../assets/main.css" rel="stylesheet">
+    <link href="../assets/css/main.css" rel="stylesheet">
     <link rel="stylesheet" href="../assets/bootstrap-3.3.7-dist/css/bootstrap.css">
     <script src="../assets/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
     <title>Edit</title>

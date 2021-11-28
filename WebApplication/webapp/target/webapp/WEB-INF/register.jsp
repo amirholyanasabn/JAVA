@@ -8,10 +8,10 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <link href="../assets/main.css" rel="stylesheet">
+    <link href="../assets/css/main.css" rel="stylesheet">
     <link rel="stylesheet" href="../assets/bootstrap-3.3.7-dist/css/bootstrap.css">
     <script src="../assets/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
-    <link href="../assets/main.css">
+    <link href="../assets/css/main.css">
     <title>Register</title>
 </head>
 <body>
@@ -24,6 +24,7 @@
             <li class="active"><a href="/home.do">Home</a></li>
             <li><a href="/register.do">Register</a></li>
             <li><a href="/student-list.do">List</a></li>
+            <li><a href="/student-find.do">Search</a></li>
         </ul>
     </div>
 </nav>

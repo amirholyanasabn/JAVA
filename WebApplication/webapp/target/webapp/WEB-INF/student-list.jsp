@@ -15,7 +15,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <link href="../assets/main.css" rel="stylesheet">
+    <link href="../assets/css/main.css" rel="stylesheet">
     <link rel="stylesheet" href="../assets/bootstrap-3.3.7-dist/css/bootstrap.css">
     <script src="../assets/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
     <title>List</title>
@@ -30,6 +30,7 @@
         <ul class="nav navbar-nav">
             <li class="active"><a href="/home.do">Home</a></li>
             <li><a href="/register.do">Register</a></li>
+            <li><a href="/student-find.do">Search</a></li>
         </ul>
     </div>
 </nav>
@@ -42,22 +43,24 @@
         <th scope="col">Major</th>
         <th scope="col">Action</th>
     </tr>
-
-    <c:forEach  items="${list}" var="st">
+<%--    <% int i = 1;%>--%>
+    <c:forEach  items="${list}" var="st" varStatus="loopStatus">
     <tr>
-        <td >${st.id}</td>
+<%--        <td ><%=i++%></td>--%>
+        <td>${loopStatus.index}</td>
         <td>${st.name}</td>
         <td>${st.family}</td>
         <td>${st.major}</td>
         <td>
-            <a href="/student-delete.do?id=${st.id}" class="btn btn-sm btn-danger">Delete</a>
-            <a href="/student-edit.do?id=${st.id}" class="btn btn-sm btn-success">Edit</a>
+            <a href="/student-delete.do?id=${st.id}" class="btn btn-sm btn-danger" onclick= "return confirmToDelete()">Delete</a>
+            <a href="/student-edit.do?id=${st.id}" class="btn btn-sm btn-success" onclick="return confirmToEdit()">Edit</a>
         </td>
     </tr>
 
     </c:forEach>
-</table>
 
+</table>
+<script src="../assets/js/modal.js" type="application/ecmascript"></script>
 
 <%--<table class="table table-dark" style="margin:10px 10px 10px 10px ;">--%>
 <%--    <thead>--%>
