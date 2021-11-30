@@ -18,10 +18,11 @@ public class StudentDAO {
     }
     public int save(Student student) throws SQLException {
         if (connection != null){
-            PreparedStatement ps = connection.prepareStatement("insert into student (name ,family,major) values (?,?,?)");
-            ps.setString(1,student.getName());
-            ps.setString(2,student.getFamily());
-            ps.setString(3,student.getMajor());
+            PreparedStatement ps = connection.prepareStatement("insert into student (ssn,name ,family,major) values (?,?,?,?)");
+            ps.setString(1,student.getSsn());
+            ps.setString(2,student.getName());
+            ps.setString(3,student.getFamily());
+            ps.setString(4,student.getMajor());
             int res = ps.executeUpdate();
             return res;
         }
@@ -75,5 +76,23 @@ public class StudentDAO {
             return rs;
         }else
             throw new SQLException("Connection in null.");
+    }
+
+    public Student findBySsn(String ssn) throws SQLException {
+        Student student = new Student();
+        if (connection != null) {
+            PreparedStatement ps = connection.prepareStatement("select  * from student where ssn=?");
+            ps.setString(1, ssn);
+            ResultSet rs = ps.executeQuery();
+            if (rs.next()) {
+                student.setId(rs.getInt(1));
+                student.setName(rs.getString(2));
+                student.setFamily((rs.getString(3)));
+                student.setMajor((rs.getString(4)));
+            }else {
+                throw new SQLException("Connection is null.");
+            }
+        }
+        return student;
     }
 }

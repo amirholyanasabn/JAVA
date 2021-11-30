@@ -16,15 +16,16 @@ public class StudentFindController extends HttpServlet {
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String sid = req.getParameter("id");
-        int id = Integer.parseInt(sid);
-        try {
-            StudentService service = new StudentService();
-            Student student = service.findById(id);
-            req.setAttribute("list",student);
-        }catch (SQLException e){
-            resp.sendRedirect("/error.do");
-        }
-        req.getRequestDispatcher("/WEB-INF/student-find.jsp").forward(req,resp);
+//        int id = Integer.parseInt(sid);
+//        try {
+//            StudentService service = new StudentService();
+//            Student student = service.findById(id);
+//            req.setAttribute("list",student);
+            req.getRequestDispatcher("/WEB-INF/student-find.jsp").forward(req,resp);
+//        }catch (SQLException e){
+//            resp.sendRedirect("/error.do");
+//        }
+
 
     }
 }

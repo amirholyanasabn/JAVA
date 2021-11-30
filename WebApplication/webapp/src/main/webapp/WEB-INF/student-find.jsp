@@ -13,6 +13,7 @@
     <link href="../assets/css/main.css" rel="stylesheet">
     <link rel="stylesheet" href="../assets/bootstrap-3.3.7-dist/css/bootstrap.css">
     <script src="../assets/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <title>Student-find</title>
 </head>
 <body>
@@ -32,18 +33,28 @@
     <div class="row">
         <div class="col-lg-12">
             <div class="page-header">
-                <h1>jQuery Searchable Plugin</h1>
+                <h1>Searching</h1>
             </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-lg-12">
-            <h3>Table / Fuzzy search example</h3>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <h1>Expandable Search Form</h1>
+            </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-lg-4 col-lg-offset-4">
-            <input type="search" id="search" value="" class="form-control" placeholder="Search using Fuzzy searching">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-3">
+                <form action="" class="search-form">
+                    <div class="form-group has-feedback">
+                        <form action="/student-find-by-ssn.do" method="post">
+                        <label for="ssn" class="sr-only">Search</label>
+                        <input type="text" class="form-control" name="search" id="ssn" placeholder="search by ssn">
+                        <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                        </form>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
     <div class="row">
@@ -70,6 +81,6 @@
         </div>
     </div>
 </div>
-
+<script src="../assets/js/searchBox.js" type="application/javascript"/>
 </body>
 </html>

@@ -24,11 +24,12 @@ public class RegisterStudentController extends HttpServlet {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+        String ssn = req.getParameter("ssn");
         String name = req.getParameter("name");
         String family = req.getParameter("family");
         String major = req.getParameter("major");
 
-        Student student = new Student(name,family,major);
+        Student student = new Student(ssn,name,family,major);
 
         try {
             studentService.save(student);

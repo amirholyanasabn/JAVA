@@ -10,24 +10,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e1055db7-bfa8-421e-9c05-f1dab0d1096b" name="Changes" comment="crud">
-      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/StudentFindController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/student-find.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/modal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/StudentFindBySsnController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/student-find-by-ssn.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/bootstrap-3.3.7-dist/js/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/searchCss.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/image/search.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/56d65bf9-061a-4696-8c56-a865a0924e4c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/56d65bf9-061a-4696-8c56-a865a0924e4c.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/RegisterStudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/RegisterStudentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/StudentFindController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/StudentFindController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/data/StudentDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/StudentDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/entities/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/edit-student.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/edit-student.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/register-student.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/register-student.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servieces/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servieces/StudentService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/student-find.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/student-find.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/student-list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/student-list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controllers/RegisterStudentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controllers/RegisterStudentController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controllers/StudentFindController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controllers/StudentFindController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/data/StudentDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/data/StudentDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entities/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entities/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/servieces/StudentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servieces/StudentService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/webapp.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/webapp.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp/WEB-INF/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/webapp/WEB-INF/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp/WEB-INF/register-student.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/webapp/WEB-INF/register-student.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp/WEB-INF/classes/controllers/RegisterStudentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/webapp/WEB-INF/classes/controllers/RegisterStudentController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp/WEB-INF/classes/controllers/StudentFindController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/webapp/WEB-INF/classes/controllers/StudentFindController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp/WEB-INF/classes/data/StudentDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/webapp/WEB-INF/classes/data/StudentDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp/WEB-INF/classes/entities/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/webapp/WEB-INF/classes/entities/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp/WEB-INF/classes/servieces/StudentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/webapp/WEB-INF/classes/servieces/StudentService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/webapp/WEB-INF/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/webapp/WEB-INF/register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp/WEB-INF/student-find.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/webapp/WEB-INF/student-find.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/webapp/WEB-INF/student-list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/webapp/WEB-INF/student-list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp/assets/main.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +52,7 @@
         <option value="CSS File" />
         <option value="JavaScript File" />
         <option value="Class" />
+        <option value="jsf" />
         <option value="Jsp File" />
       </list>
     </option>
@@ -192,6 +205,8 @@
       <workItem from="1637906914295" duration="6886000" />
       <workItem from="1637999315421" duration="3444000" />
       <workItem from="1638092242332" duration="6052000" />
+      <workItem from="1638098420569" duration="121000" />
+      <workItem from="1638271646927" duration="8549000" />
     </task>
     <task id="LOCAL-00001" summary="crud">
       <created>1638002375446</created>

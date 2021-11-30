@@ -31,6 +31,9 @@
 <div class="container" id="form-div">
     <form action="/register-student.do"  method="post" class="form-group" id="input-form">
         <div style="border: 10px">
+            <input type="text" class="form-control" placeholder="SSN" name="ssn">
+        </div>
+        <div style="border: 10px">
         <input type="text" class="form-control" placeholder="Name" name="name">
         </div>
         <br/>

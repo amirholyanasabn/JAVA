@@ -2,7 +2,7 @@ package entities;
 
 public class Student {
     private int id;
-    private String ssn;
+    private String ssn; //Social Security Number
     private String name;
     private String family;
     private String major;
@@ -18,7 +18,8 @@ public class Student {
         this.major = major;
     }
 
-    public Student(String name, String family, String major) {
+    public Student(String ssn,String name, String family, String major) {
+        this.ssn = ssn;
         this.name = name;
         this.family = family;
         this.major = major;

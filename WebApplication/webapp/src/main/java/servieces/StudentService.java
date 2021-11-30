@@ -27,4 +27,9 @@ public class StudentService {
     public void edit(Student student) throws SQLException {
         studentDAO.edit(student);
     }
+
+    public Student findBySsn(String ssn) throws SQLException {
+
+        return studentDAO.findBySsn(ssn);
+    }
 }

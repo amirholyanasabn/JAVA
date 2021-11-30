@@ -47,7 +47,7 @@
     <c:forEach  items="${list}" var="st" varStatus="loopStatus">
     <tr>
 <%--        <td ><%=i++%></td>--%>
-        <td>${loopStatus.index}</td>
+        <td>${loopStatus.index+1}</td>
         <td>${st.name}</td>
         <td>${st.family}</td>
         <td>${st.major}</td>
